@@ -113,6 +113,41 @@ export default function Index() {
         </div>
       </section>
 
+      {/* SERVICES */}
+      <section className="relative bg-[#0a0a0a] py-16 px-6 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(150,110,180,0.1)_0%,_transparent_65%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(180,140,90,0.08)_0%,_transparent_60%)]" />
+        <div className="relative z-10 max-w-2xl mx-auto">
+          <div className="text-center mb-12">
+            <p className="text-[#a89060] text-[10px] uppercase tracking-[0.35em] font-light mb-2">Что я предлагаю</p>
+            <h2 className="font-cormorant text-4xl md:text-5xl text-white font-light uppercase tracking-wide">
+              Наши услуги
+            </h2>
+            <div className="w-16 h-[1px] bg-[#a89060] mx-auto mt-4" />
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {[
+              { icon: "Sparkles", title: "Консультация косметолога", desc: "Персональный анализ кожи и разработка индивидуальной программы ухода" },
+              { icon: "Microscope", title: "Трихологическая диагностика", desc: "Комплексное исследование кожи головы и волос, подбор программы восстановления" },
+              { icon: "Star", title: "Программа омоложения", desc: "Системный подход к омоложению без инъекций — результат виден уже через 2 недели" },
+              { icon: "Heart", title: "Поддержка организма", desc: "Подбор витаминов, минералов и нутрицевтиков под ваши цели и анализы" },
+              { icon: "Flower2", title: "Уход за кожей головы", desc: "Оздоровительные программы при выпадении, перхоти, жирности и сухости" },
+              { icon: "Zap", title: "Комплексное преображение", desc: "Полная программа изнутри и снаружи — красота как система, а не разовый эффект" },
+            ].map((s, i) => (
+              <div key={i} className="group flex gap-4 items-start bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#a89060]/40 rounded-2xl px-5 py-5 transition-all duration-300">
+                <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#a89060]/15 flex items-center justify-center mt-0.5">
+                  <Icon name={s.icon} size={20} className="text-[#a89060]" fallback="Star" />
+                </div>
+                <div>
+                  <p className="text-white font-medium text-sm mb-1">{s.title}</p>
+                  <p className="text-[#888] text-xs leading-relaxed">{s.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* BRANDS + CONTACTS */}
       <section className="relative bg-[#0a0a0a] py-10 px-6 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(180,140,100,0.1)_0%,_transparent_60%)]" />
@@ -177,41 +212,6 @@ export default function Index() {
               </div>
               <p className="text-[#9ab8a8] text-[9px] uppercase tracking-wider">Telegram</p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SERVICES */}
-      <section className="relative bg-[#0a0a0a] py-16 px-6 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(150,110,180,0.1)_0%,_transparent_65%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(180,140,90,0.08)_0%,_transparent_60%)]" />
-        <div className="relative z-10 max-w-2xl mx-auto">
-          <div className="text-center mb-12">
-            <p className="text-[#a89060] text-[10px] uppercase tracking-[0.35em] font-light mb-2">Что я предлагаю</p>
-            <h2 className="font-cormorant text-4xl md:text-5xl text-white font-light uppercase tracking-wide">
-              Наши услуги
-            </h2>
-            <div className="w-16 h-[1px] bg-[#a89060] mx-auto mt-4" />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {[
-              { icon: "Sparkles", title: "Консультация косметолога", desc: "Персональный анализ кожи и разработка индивидуальной программы ухода" },
-              { icon: "Microscope", title: "Трихологическая диагностика", desc: "Комплексное исследование кожи головы и волос, подбор программы восстановления" },
-              { icon: "Star", title: "Программа омоложения", desc: "Системный подход к омоложению без инъекций — результат виден уже через 2 недели" },
-              { icon: "Heart", title: "Поддержка организма", desc: "Подбор витаминов, минералов и нутрицевтиков под ваши цели и анализы" },
-              { icon: "Flower2", title: "Уход за кожей головы", desc: "Оздоровительные программы при выпадении, перхоти, жирности и сухости" },
-              { icon: "Zap", title: "Комплексное преображение", desc: "Полная программа изнутри и снаружи — красота как система, а не разовый эффект" },
-            ].map((s, i) => (
-              <div key={i} className="group flex gap-4 items-start bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#a89060]/40 rounded-2xl px-5 py-5 transition-all duration-300">
-                <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#a89060]/15 flex items-center justify-center mt-0.5">
-                  <Icon name={s.icon} size={20} className="text-[#a89060]" fallback="Star" />
-                </div>
-                <div>
-                  <p className="text-white font-medium text-sm mb-1">{s.title}</p>
-                  <p className="text-[#888] text-xs leading-relaxed">{s.desc}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
