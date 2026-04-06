@@ -98,15 +98,19 @@ export default function Index() {
       </section>
 
       {/* PILLARS */}
-      <section className="bg-white py-14 px-6 w-full">
-        <div className="grid grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <section className="relative bg-white py-14 px-6 w-full overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(180,210,190,0.25)_0%,_transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(200,185,220,0.18)_0%,_transparent_50%)]" />
+        <div className="relative z-10 grid grid-cols-3 gap-8 max-w-4xl mx-auto">
           {[
             { icon: "Leaf", desc: "От состава к результату: только эффективные, проверенные формулы" },
             { icon: "FlaskConical", desc: "Поддержка изнутри: витамины, минералы, питание каждой клетки" },
             { icon: "Search", desc: "Индивидуальный подбор: назначаю, рекомендую и веду до результата" },
           ].map((p, i) => (
-            <div key={i} className="flex flex-col items-center text-center gap-3">
-              <Icon name={p.icon} size={56} className="text-[#1a1a1a]" fallback="Star" />
+            <div key={i} className="flex flex-col items-center text-center gap-4">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-[#f0f5f2] to-[#e8e0f0] flex items-center justify-center shadow-sm">
+                <Icon name={p.icon} size={32} className="text-[#1a1a1a]" fallback="Star" />
+              </div>
               <p className="text-[#1a1a1a] text-xs md:text-sm leading-relaxed font-light">{p.desc}</p>
             </div>
           ))}
