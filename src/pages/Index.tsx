@@ -80,13 +80,13 @@ export default function Index() {
             <div className="flex-1 pl-4 pr-2 pb-10 space-y-3 pt-2 z-10">
               {features.map((f, i) => (
                 <div key={i} className="flex gap-2 items-start">
-                  <Icon name={f.icon} size={18} className="text-[#a8c8b8] flex-shrink-0 mt-[3px] drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]" fallback="Check" />
-                  <p className="text-white text-base leading-relaxed font-normal drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">{f.text}</p>
+                  <Icon name={f.icon} size={16} className="text-[#a8c8b8] flex-shrink-0 mt-[3px] drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]" fallback="Check" />
+                  <p className="text-white text-sm md:text-base leading-relaxed font-normal drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">{f.text}</p>
                 </div>
               ))}
             </div>
             {/* Photo — flush right, overlaps headline block */}
-            <div className="flex-shrink-0 w-[38%] md:w-[35%] -mt-96 relative z-20">
+            <div className="flex-shrink-0 w-[38%] md:w-[35%] -mt-[120px] md:-mt-96 relative z-20">
               <img
                 src="https://cdn.poehali.dev/projects/66cecb4f-8169-42b7-a5a2-fbb46fdb6702/bucket/23ea6845-9006-4caa-b2f4-7b6f23053bb0.png"
                 alt="Анна Котельникова"
