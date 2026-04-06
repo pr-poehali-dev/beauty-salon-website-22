@@ -98,7 +98,7 @@ export default function Index() {
       </section>
 
       {/* PILLARS */}
-      <section className="bg-[#2a2a2a] py-10 px-4 w-full">
+      <section className="bg-white py-10 px-4 w-full">
         <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto">
           {[
             { icon: "Leaf", desc: "От состава к результату: только эффективные, проверенные формулы" },
@@ -106,10 +106,10 @@ export default function Index() {
             { icon: "Search", desc: "Индивидуальный подбор: назначаю, рекомендую и веду до результата" },
           ].map((p, i) => (
             <div key={i} className="flex flex-col items-center text-center gap-3">
-              <div className="w-14 h-14 rounded-full bg-[#3a3a3a] flex items-center justify-center shadow-md">
-                <Icon name={p.icon} size={26} className="text-[#d4c5a0]" fallback="Star" />
+              <div className="w-14 h-14 rounded-full bg-[#f0f0f0] flex items-center justify-center shadow-sm">
+                <Icon name={p.icon} size={26} className="text-[#1a1a1a]" fallback="Star" />
               </div>
-              <p className="text-[#cccccc] text-xs md:text-sm leading-relaxed font-light">{p.desc}</p>
+              <p className="text-[#1a1a1a] text-xs md:text-sm leading-relaxed font-light">{p.desc}</p>
             </div>
           ))}
         </div>
