@@ -84,15 +84,12 @@ export default function Index() {
                 </div>
               ))}
             </div>
-            {/* Photo — flush right */}
-            <div className="flex-shrink-0 w-[38%] md:w-[35%] self-stretch relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#0f1e18] via-transparent to-transparent z-10" />
-              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0f1e18] to-transparent z-10" />
+            {/* Photo — flush right, transparent bg */}
+            <div className="flex-shrink-0 w-[38%] md:w-[35%]">
               <img
                 src="https://cdn.poehali.dev/projects/66cecb4f-8169-42b7-a5a2-fbb46fdb6702/bucket/23ea6845-9006-4caa-b2f4-7b6f23053bb0.png"
                 alt="Анна Котельникова"
-                className="w-full h-full object-cover object-top"
-                style={{ minHeight: "280px" }}
+                className="w-full object-contain"
               />
             </div>
           </div>
