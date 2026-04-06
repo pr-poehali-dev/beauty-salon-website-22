@@ -98,8 +98,8 @@ export default function Index() {
       </section>
 
       {/* PILLARS */}
-      <section className="bg-white py-10 px-4 w-full">
-        <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto">
+      <section className="bg-white py-14 px-6 w-full">
+        <div className="grid grid-cols-3 gap-8 max-w-4xl mx-auto">
           {[
             { icon: "Leaf", desc: "От состава к результату: только эффективные, проверенные формулы" },
             { icon: "FlaskConical", desc: "Поддержка изнутри: витамины, минералы, питание каждой клетки" },
