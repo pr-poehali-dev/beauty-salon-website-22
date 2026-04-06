@@ -97,14 +97,14 @@ export default function Index() {
       </section>
 
       {/* PILLARS — light strip */}
-      <section className="bg-[#111111] py-8 px-6">
+      <section className="bg-[#e4ebe5] py-8 px-6">
         <div className="max-w-xl mx-auto grid grid-cols-3 gap-4">
           {pillars.map((p, i) => (
             <div key={i} className="flex flex-col items-center text-center gap-2">
-              <div className="w-12 h-12 rounded-full bg-[#222222] flex items-center justify-center shadow-sm">
-                <Icon name={p.icon} size={22} className="text-[#a8c8b8]" fallback="Star" />
+              <div className="w-12 h-12 rounded-full bg-[#c6d8c8] flex items-center justify-center shadow-sm">
+                <Icon name={p.icon} size={22} className="text-[#2d5a40]" fallback="Star" />
               </div>
-              <p className="text-[#cccccc] text-[10px] md:text-xs leading-relaxed font-light">{p.desc}</p>
+              <p className="text-[#1a2e22] text-[10px] md:text-xs leading-relaxed font-light">{p.desc}</p>
             </div>
           ))}
         </div>
