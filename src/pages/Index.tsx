@@ -53,15 +53,12 @@ export default function Index() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(100,150,120,0.12)_0%,_transparent_60%)]" />
 
         {/* Logo header */}
-        <div className="relative z-10 flex flex-col items-center pt-12 pb-6 px-6">
-          <div className="flex items-center gap-3 mb-1">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#6fa882] to-[#3d7a5a] flex items-center justify-center shadow-lg">
-              <Icon name="Sparkles" size={18} className="text-white" />
-            </div>
-            <span className="font-cormorant text-5xl font-light tracking-widest text-white uppercase">NOVO</span>
-          </div>
-          <p className="text-[#9ab8a8] text-[11px] tracking-[0.25em] uppercase font-light">пространство преображения</p>
-          <p className="text-[#9ab8a8] text-[11px] tracking-[0.15em] font-light">Анны Котельниковой</p>
+        <div className="relative z-10 flex flex-col items-center pt-10 pb-6 px-6">
+          <img
+            src="https://cdn.poehali.dev/projects/66cecb4f-8169-42b7-a5a2-fbb46fdb6702/bucket/9a2933b1-1527-4fda-b17d-d812dd298848.png"
+            alt="NOVO — пространство преображения Анны Котельниковой"
+            className="w-64 md:w-72 object-contain brightness-[10] opacity-90"
+          />
         </div>
 
         {/* Headline */}
@@ -265,8 +262,11 @@ export default function Index() {
 
       {/* FOOTER */}
       <footer className="bg-[#0a1510] py-6 px-6 text-center border-t border-[#1e3028]">
-        <p className="font-cormorant text-2xl text-white tracking-[0.3em] uppercase mb-1">NOVO</p>
-        <p className="text-[#5a7060] text-[10px] tracking-wider uppercase">пространство преображения Анны Котельниковой</p>
+        <img
+          src="https://cdn.poehali.dev/projects/66cecb4f-8169-42b7-a5a2-fbb46fdb6702/bucket/9a2933b1-1527-4fda-b17d-d812dd298848.png"
+          alt="NOVO"
+          className="w-36 object-contain brightness-[10] opacity-50 mx-auto mb-1"
+        />
         <a href="tel:+79025416495" className="text-[#9ab8a8] text-sm hover:text-white transition-colors block mt-3">
           +7 902 541 64 95
         </a>
