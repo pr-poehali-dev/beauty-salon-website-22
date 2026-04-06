@@ -50,7 +50,7 @@ export default function Index() {
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-gradient-to-b from-[#1a2a24] to-[#0f1e18]">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(100,150,120,0.12)_0%,_transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(60,60,60,0.08)_0%,_transparent_60%)]" />
 
         {/* Logo header */}
         <div className="relative z-10 flex flex-col items-center pt-10 pb-6 px-6">
@@ -78,7 +78,7 @@ export default function Index() {
             <div className="flex-1 space-y-[10px] pt-2">
               {features.map((f, i) => (
                 <div key={i} className="flex gap-2 items-start">
-                  <span className="text-[#6fa882] mt-[3px] text-xs flex-shrink-0">•</span>
+                  <span className="text-[#c0c8c4] mt-[3px] text-xs flex-shrink-0">•</span>
                   <p className="text-[#c8d8cc] text-xs md:text-sm leading-relaxed font-light">{f}</p>
                 </div>
               ))}
