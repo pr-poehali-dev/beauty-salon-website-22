@@ -2,11 +2,11 @@ import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
 const features = [
-  "Премиальный уход нового поколения: инновации, чистые составы, результат в комплексе",
-  "Без привыкания: устойчивый эффект за счет грамотной схемы",
-  "Комплексные оздоровительные программы для кожи головы и волос",
-  "Внутренняя поддержка организма: витамины, минералы, питание клеток",
-  "Омоложение без уколов",
+  { icon: "Sparkles", text: "Премиальный уход нового поколения: инновации, чистые составы, результат в комплексе" },
+  { icon: "ShieldCheck", text: "Без привыкания: устойчивый эффект за счет грамотной схемы" },
+  { icon: "Flower2", text: "Комплексные оздоровительные программы для кожи головы и волос" },
+  { icon: "Heart", text: "Внутренняя поддержка организма: витамины, минералы, питание клеток" },
+  { icon: "Zap", text: "Омоложение без уколов" },
 ];
 
 const pillars = [
@@ -76,11 +76,11 @@ export default function Index() {
         <div className="relative z-10 pb-0">
           <div className="relative flex items-start">
             {/* Text */}
-            <div className="flex-1 pl-4 pr-2 pb-10 space-y-[10px] pt-2 z-10">
+            <div className="flex-1 pl-4 pr-2 pb-10 space-y-3 pt-2 z-10">
               {features.map((f, i) => (
                 <div key={i} className="flex gap-2 items-start">
-                  <span className="text-white mt-[3px] text-xs flex-shrink-0">•</span>
-                  <p className="text-white text-sm leading-relaxed font-normal drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">{f}</p>
+                  <Icon name={f.icon} size={15} className="text-[#a8c8b8] flex-shrink-0 mt-[2px] drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]" fallback="Check" />
+                  <p className="text-white text-sm leading-relaxed font-normal drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">{f.text}</p>
                 </div>
               ))}
             </div>
