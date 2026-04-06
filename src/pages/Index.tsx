@@ -50,7 +50,8 @@ export default function Index() {
 
       {/* HERO */}
       <section className="relative overflow-hidden bg-[#0a0a0a]">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(60,60,60,0.08)_0%,_transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(180,140,100,0.12)_0%,_transparent_50%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(120,90,160,0.1)_0%,_transparent_55%)]" />
 
         {/* Logo header */}
         <div className="relative z-10 flex flex-col items-center pt-10 pb-6 px-6">
@@ -111,7 +112,9 @@ export default function Index() {
       </section>
 
       {/* BRANDS + CONTACTS */}
-      <section className="bg-[#0a0a0a] py-10 px-6">
+      <section className="relative bg-[#0a0a0a] py-10 px-6 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(180,140,100,0.1)_0%,_transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(100,80,140,0.08)_0%,_transparent_60%)]" />
         <div className="max-w-xl mx-auto">
           <div className="mb-6">
             <p className="text-[#9ab8a8] text-[10px] mb-2 uppercase tracking-[0.3em] font-light">Работаю на брендах:</p>
@@ -177,7 +180,9 @@ export default function Index() {
       </section>
 
       {/* BOOKING */}
-      <section id="booking" className="bg-[#0a0a0a] py-14 px-6">
+      <section id="booking" className="relative bg-[#0a0a0a] py-14 px-6 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(150,110,180,0.1)_0%,_transparent_65%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(180,140,90,0.08)_0%,_transparent_60%)]" />
         <div className="max-w-xl mx-auto">
           <div className="text-center mb-10">
             <p className="text-[#6fa882] text-[10px] uppercase tracking-[0.35em] font-light mb-2">Онлайн-запись</p>
