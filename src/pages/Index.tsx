@@ -84,8 +84,8 @@ export default function Index() {
                 </div>
               ))}
             </div>
-            {/* Photo — flush right, transparent bg */}
-            <div className="flex-shrink-0 w-[38%] md:w-[35%]">
+            {/* Photo — flush right, overlaps headline block */}
+            <div className="flex-shrink-0 w-[38%] md:w-[35%] -mt-24 relative z-20">
               <img
                 src="https://cdn.poehali.dev/projects/66cecb4f-8169-42b7-a5a2-fbb46fdb6702/bucket/23ea6845-9006-4caa-b2f4-7b6f23053bb0.png"
                 alt="Анна Котельникова"
