@@ -101,9 +101,9 @@ export default function Index() {
       <section className="bg-white py-14 px-6 w-full">
         <div className="grid grid-cols-3 gap-8 max-w-4xl mx-auto">
           {[
-            { icon: "Leaf", desc: "От состава к результату: только эффективные, проверенные формулы" },
-            { icon: "FlaskConical", desc: "Поддержка изнутри: витамины, минералы, питание каждой клетки" },
-            { icon: "Search", desc: "Индивидуальный подбор: назначаю, рекомендую и веду до результата" },
+            { icon: "Sprout", desc: "От состава к результату: только эффективные, проверенные формулы" },
+            { icon: "Pill", desc: "Поддержка изнутри: витамины, минералы, питание каждой клетки" },
+            { icon: "ScanLine", desc: "Индивидуальный подбор: назначаю, рекомендую и веду до результата" },
           ].map((p, i) => (
             <div key={i} className="flex flex-col items-center text-center gap-3">
               <Icon name={p.icon} size={42} className="text-[#1a1a1a]" fallback="Star" />
