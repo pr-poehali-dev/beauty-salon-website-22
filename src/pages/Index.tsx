@@ -98,10 +98,9 @@ export default function Index() {
       </section>
 
       {/* PILLARS */}
-      <section className="relative py-14 px-6 w-full overflow-hidden" style={{background: "linear-gradient(135deg, #f8f5ff 0%, #edf7f0 40%, #f5eef8 70%, #eef6f9 100%)"}}>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_rgba(120,180,140,0.35)_0%,_transparent_45%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(160,120,200,0.3)_0%,_transparent_45%)]" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(255,255,255,0.5)_0%,_transparent_70%)]" />
+      <section className="relative py-14 px-6 w-full overflow-hidden bg-white">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-transparent to-[#0a0a0a]" style={{opacity: 0.85}} />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white to-transparent" />
         <div className="relative z-10 grid grid-cols-3 gap-8 max-w-4xl mx-auto">
           {[
             { icon: "Leaf", desc: "От состава к результату: только эффективные, проверенные формулы" },
