@@ -119,11 +119,11 @@ export default function Index() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_rgba(180,140,90,0.08)_0%,_transparent_60%)]" />
         <div className="relative z-10 max-w-2xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[#a89060] text-[10px] uppercase tracking-[0.35em] font-light mb-2">Что я предлагаю</p>
+            <p className="text-[#c8d8cc] text-[10px] uppercase tracking-[0.35em] font-light mb-2">Что я предлагаю</p>
             <h2 className="font-cormorant text-4xl md:text-5xl text-white font-light uppercase tracking-wide">
               Наши услуги
             </h2>
-            <div className="w-16 h-[1px] bg-[#a89060] mx-auto mt-4" />
+            <div className="w-16 h-[1px] bg-[#9ab8a8] mx-auto mt-4" />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
