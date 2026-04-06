@@ -49,7 +49,7 @@ export default function Index() {
     <div className="min-h-screen bg-novo-dark text-novo-light font-montserrat">
 
       {/* HERO */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#1a2a24] to-[#0f1e18]">
+      <section className="relative overflow-hidden bg-[#0a0a0a]">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_rgba(60,60,60,0.08)_0%,_transparent_60%)]" />
 
         {/* Logo header */}
@@ -111,7 +111,7 @@ export default function Index() {
       </section>
 
       {/* BRANDS + CONTACTS */}
-      <section className="bg-[#182820] py-10 px-6">
+      <section className="bg-[#0a0a0a] py-10 px-6">
         <div className="max-w-xl mx-auto">
           <div className="mb-6">
             <p className="text-[#9ab8a8] text-[10px] mb-2 uppercase tracking-[0.3em] font-light">Работаю на брендах:</p>
@@ -177,7 +177,7 @@ export default function Index() {
       </section>
 
       {/* BOOKING */}
-      <section id="booking" className="bg-[#0f1e18] py-14 px-6">
+      <section id="booking" className="bg-[#0a0a0a] py-14 px-6">
         <div className="max-w-xl mx-auto">
           <div className="text-center mb-10">
             <p className="text-[#6fa882] text-[10px] uppercase tracking-[0.35em] font-light mb-2">Онлайн-запись</p>
@@ -259,7 +259,7 @@ export default function Index() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#0a1510] py-6 px-6 text-center border-t border-[#1e3028]">
+      <footer className="bg-[#050505] py-6 px-6 text-center border-t border-[#222]">
         <img
           src="https://cdn.poehali.dev/projects/66cecb4f-8169-42b7-a5a2-fbb46fdb6702/bucket/9a2933b1-1527-4fda-b17d-d812dd298848.png"
           alt="NOVO"
