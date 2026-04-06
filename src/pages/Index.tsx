@@ -79,8 +79,8 @@ export default function Index() {
             <div className="flex-1 pl-4 pr-2 pb-10 space-y-[10px] pt-2 z-10">
               {features.map((f, i) => (
                 <div key={i} className="flex gap-2 items-start">
-                  <span className="text-[#c0c8c4] mt-[3px] text-xs flex-shrink-0">•</span>
-                  <p className="text-[#c8d8cc] text-xs md:text-sm leading-relaxed font-light">{f}</p>
+                  <span className="text-white mt-[3px] text-xs flex-shrink-0">•</span>
+                  <p className="text-white text-sm leading-relaxed font-normal drop-shadow-[0_1px_3px_rgba(0,0,0,0.9)]">{f}</p>
                 </div>
               ))}
             </div>
