@@ -97,15 +97,19 @@ export default function Index() {
         </div>
       </section>
 
-      {/* PILLARS — light strip */}
-      <section className="bg-[#e4ebe5] py-8 px-6">
-        <div className="max-w-xl mx-auto grid grid-cols-3 gap-4">
-          {pillars.map((p, i) => (
-            <div key={i} className="flex flex-col items-center text-center gap-2">
-              <div className="w-12 h-12 rounded-full bg-[#c6d8c8] flex items-center justify-center shadow-sm">
-                <Icon name={p.icon} size={22} className="text-[#2d5a40]" fallback="Star" />
+      {/* PILLARS */}
+      <section className="bg-[#2a2a2a] py-10 px-4 w-full">
+        <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto">
+          {[
+            { icon: "Leaf", desc: "От состава к результату: только эффективные, проверенные формулы" },
+            { icon: "FlaskConical", desc: "Поддержка изнутри: витамины, минералы, питание каждой клетки" },
+            { icon: "Search", desc: "Индивидуальный подбор: назначаю, рекомендую и веду до результата" },
+          ].map((p, i) => (
+            <div key={i} className="flex flex-col items-center text-center gap-3">
+              <div className="w-14 h-14 rounded-full bg-[#3a3a3a] flex items-center justify-center shadow-md">
+                <Icon name={p.icon} size={26} className="text-[#d4c5a0]" fallback="Star" />
               </div>
-              <p className="text-[#1a2e22] text-[10px] md:text-xs leading-relaxed font-light">{p.desc}</p>
+              <p className="text-[#cccccc] text-xs md:text-sm leading-relaxed font-light">{p.desc}</p>
             </div>
           ))}
         </div>
