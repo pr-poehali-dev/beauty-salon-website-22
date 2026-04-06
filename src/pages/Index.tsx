@@ -154,8 +154,8 @@ export default function Index() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_rgba(100,80,140,0.08)_0%,_transparent_60%)]" />
         <div className="max-w-xl mx-auto">
           <div className="mb-6">
-            <p className="text-[#9ab8a8] text-[10px] mb-2 uppercase tracking-[0.3em] font-light">Работаю на брендах:</p>
-            <p className="text-white text-xl font-light leading-relaxed font-cormorant tracking-wide">
+            <p className="text-[#9ab8a8] text-[10px] mb-3 uppercase tracking-[0.3em] font-light">Работаю на брендах:</p>
+            <p className="text-white text-3xl md:text-4xl font-light leading-relaxed font-cormorant tracking-wide">
               RIABINOVA | NEZHNEL |<br />M.AKLIVE | LEETOO | FitLine
             </p>
           </div>
