@@ -101,12 +101,12 @@ export default function Index() {
       <section className="bg-white py-14 px-6 w-full">
         <div className="grid grid-cols-3 gap-8 max-w-4xl mx-auto">
           {[
-            { icon: "Sprout", desc: "От состава к результату: только эффективные, проверенные формулы", color: "text-[#4a9e6b]" },
-            { icon: "Pill", desc: "Поддержка изнутри: витамины, минералы, питание каждой клетки", color: "text-[#6b7fd4]" },
-            { icon: "ScanLine", desc: "Индивидуальный подбор: назначаю, рекомендую и веду до результата", color: "text-[#c4804a]" },
+            { icon: "Sprout", desc: "От состава к результату: только эффективные, проверенные формулы" },
+            { icon: "Pill", desc: "Поддержка изнутри: витамины, минералы, питание каждой клетки" },
+            { icon: "ScanLine", desc: "Индивидуальный подбор: назначаю, рекомендую и веду до результата" },
           ].map((p, i) => (
             <div key={i} className="flex flex-col items-center text-center gap-3">
-              <Icon name={p.icon} size={42} className={p.color} fallback="Star" />
+              <Icon name={p.icon} size={42} className="text-[#1a1a1a]" fallback="Star" />
               <p className="text-[#1a1a1a] text-xs md:text-sm leading-relaxed font-light">{p.desc}</p>
             </div>
           ))}
