@@ -72,10 +72,11 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Features + Photo side by side */}
-        <div className="relative z-10 px-4 pb-10">
-          <div className="max-w-xl mx-auto flex gap-3 items-start">
-            <div className="flex-1 space-y-[10px] pt-2">
+        {/* Features + Photo — photo pinned to right edge */}
+        <div className="relative z-10 pb-0">
+          <div className="relative flex items-start">
+            {/* Text */}
+            <div className="flex-1 pl-4 pr-2 pb-10 space-y-[10px] pt-2 z-10">
               {features.map((f, i) => (
                 <div key={i} className="flex gap-2 items-start">
                   <span className="text-[#c0c8c4] mt-[3px] text-xs flex-shrink-0">•</span>
@@ -83,16 +84,16 @@ export default function Index() {
                 </div>
               ))}
             </div>
-            <div className="w-36 md:w-44 flex-shrink-0 -mb-2">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0f1e18] via-transparent to-transparent z-10" />
-                <img
-                  src="https://cdn.poehali.dev/files/b35cf654-1752-4030-a9fc-172b60db2999.jpg"
-                  alt="Анна Котельникова"
-                  className="w-full object-cover object-top"
-                  style={{ height: "290px" }}
-                />
-              </div>
+            {/* Photo — flush right, no border radius on right side */}
+            <div className="flex-shrink-0 w-[45%] md:w-[42%] self-stretch relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0f1e18] via-transparent to-transparent z-10" />
+              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0f1e18] to-transparent z-10" />
+              <img
+                src="https://cdn.poehali.dev/projects/66cecb4f-8169-42b7-a5a2-fbb46fdb6702/bucket/1ede2862-6614-4c6a-8c86-7055d8dfb15b.png"
+                alt="Анна Котельникова"
+                className="w-full h-full object-cover object-top"
+                style={{ minHeight: "320px" }}
+              />
             </div>
           </div>
         </div>
