@@ -106,9 +106,7 @@ export default function Index() {
             { icon: "Search", desc: "Индивидуальный подбор: назначаю, рекомендую и веду до результата" },
           ].map((p, i) => (
             <div key={i} className="flex flex-col items-center text-center gap-3">
-              <div className="w-14 h-14 rounded-full bg-[#f0f0f0] flex items-center justify-center shadow-sm">
-                <Icon name={p.icon} size={26} className="text-[#1a1a1a]" fallback="Star" />
-              </div>
+              <Icon name={p.icon} size={42} className="text-[#1a1a1a]" fallback="Star" />
               <p className="text-[#1a1a1a] text-xs md:text-sm leading-relaxed font-light">{p.desc}</p>
             </div>
           ))}
